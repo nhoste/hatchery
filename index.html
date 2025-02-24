@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>nhoste sfotware solutions - hatchery demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- CSS FILES HERE -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/css/vendors/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- endinject -->
+
+    <style>
+        .map-container {
+            width: 100%;
+            height: 400px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="tm-preloader">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="tm-preloader-logo">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </div>
+                    <span class="tm-preloader-progress"></span>
+                </div>
+            </div>
+        </div>
+        <button class="tm-button tm-button-small">Cancel Preloader</button>
+    </div>
+    <!--// Preloader -->
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="wrapper">
+
+        <!-- Header -->
+        <div class="tm-header tm-header-sticky">
+
+
+
+            <div class="tm-header-bottomarea">
+                <div class="container">
+                    <div class="tm-header-inner">
+                        <a href="index.html" class="tm-header-logo">
+                            <img src="assets/images/logo.png" alt="malic">
+                        </a>
+                        <nav class="tm-header-nav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="under-construction.html">About</a></li>
+                                <li><a href="under-construction.html">Farming Guide</a></li>
+                                <li><a href="under-construction.html">Contact</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="tm-mobilenav"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--// Header -->
+
+        <!-- Heroslider Area -->
+        <div class="tm-heroslider-area bg-grey">
+
+            <div class="tm-heroslider-slider">
+
+                <!-- Heroslider Item -->
+                <div class="tm-heroslider">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 col-md-8 order-2 order-md-1">
+                                <div class="tm-heroslider-contentwrapper">
+                                    <div class="tm-heroslider-content">
+                                        <h1>Premium Quality Post-Larvae for Thriving Farms</h1>
+                                        <p>Grow your success with our disease-free, high-survival-rate post-larvae.
+                                            Sourced from advanced hatcheries and delivered fresh to your farm.</p>
+                                        <a href="#" class="tm-button">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-4 order-1 order-md-2">
+                                <div class="tm-heroslider-image">
+                                    <img src="assets/images/prawns1.jpeg" alt="heroslider image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// Heroslider Item -->
+
+                <!-- Heroslider Item -->
+                <div class="tm-heroslider">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 col-md-8 order-2 order-md-1">
+                                <div class="tm-heroslider-contentwrapper">
+                                    <div class="tm-heroslider-content">
+                                        <h1>Your Trusted Partner in Prawn Farming</h1>
+                                        <p>From hatchery to harvest, we support farmers with premium post-larvae, expert
+                                            guidance, and reliable nationwide delivery.</p>
+                                        <a href="#" class="tm-button">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-4 order-1 order-md-2">
+                                <div class="tm-heroslider-image">
+                                    <img src="assets/images/prawns2.jpeg" alt="heroslider image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// Heroslider Item -->
+
+                <!-- Heroslider Item -->
+                <div class="tm-heroslider">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 col-md-8 order-2 order-md-1">
+                                <div class="tm-heroslider-contentwrapper">
+                                    <div class="tm-heroslider-content">
+                                        <h1>Healthy & Disease-Free Prawns, Guaranteed</h1>
+                                        <p>We ensure top-quality prawn post-larvae with advanced biosecurity measures
+                                            and expert care, giving you the best start for a profitable harvest.</p>
+                                        <a href="#" class="tm-button">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-4 order-1 order-md-2">
+                                <div class="tm-heroslider-image">
+                                    <img src="assets/images/prawns3.jpeg" alt="heroslider image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// Heroslider Item -->
+
+            </div>
+
+            <div class="tm-heroslider-pagination">
+                <svg viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="radialbg" cx="16.9" cy="16.9" r="15.9"></circle>
+                    <circle class="radialactive" cx="16.9" cy="16.9" r="15.9" stroke-dasharray="33.333333333333336 100">
+                    </circle>
+                </svg>
+                <div class="slides-numbers">
+                    <span class="active">1</span>/<span class="total"></span>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!--// Heroslider Area -->
+
+        <!-- Page Content -->
+        <main class="page-content">
+
+            <!-- Features Area -->
+            <div class="tm-section tm-feature-area tm-padding-section bg-white"
+                data-bgimage="assets/images/feature-image.png" data-white-overlay="8">
+                <div class="container">
+                    <div class="row justify-content-end mt-30-reverse">
+
+                        <!-- Single Feature -->
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-30">
+                            <div class="tm-feature text-center tm-scrollanim">
+                                <span class="tm-feature-icon">
+                                    <img src="assets/images/icons/icon-feature-1.png" alt="feature icon">
+                                </span>
+                                <div class="tm-feature-content">
+                                    <h6>High Survival</h6>
+                                    <p>Strong post-larvae with excellent growth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Feature -->
+
+                        <!-- Single Feature -->
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-30">
+                            <div class="tm-feature text-center tm-scrollanim">
+                                <span class="tm-feature-icon">
+                                    <img src="assets/images/icons/icon-feature-2.png" alt="feature icon">
+                                </span>
+                                <div class="tm-feature-content">
+                                    <h6>Disease-Free</h6>
+                                    <p>Advanced hatchery with health screening.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Feature -->
+
+                        <!-- Single Feature -->
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-30">
+                            <div class="tm-feature text-center tm-scrollanim">
+                                <span class="tm-feature-icon">
+                                    <img src="assets/images/icons/icon-feature-3.png" alt="feature icon">
+                                </span>
+                                <div class="tm-feature-content">
+                                    <h6>Fast Growth</h6>
+                                    <p>Guaranteed high-performance hatchery stock.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Feature -->
+
+                        <!-- Single Feature -->
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-30">
+                            <div class="tm-feature text-center tm-scrollanim">
+                                <span class="tm-feature-icon">
+                                    <img src="assets/images/icons/icon-feature-4.png" alt="feature icon">
+                                </span>
+                                <div class="tm-feature-content">
+                                    <h6>Reliable Supply</h6>
+                                    <p>Ensuring uninterrupted farming operations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Single Feature -->
+
+                    </div>
+                </div>
+            </div>
+            <!--// Features Area -->
+
+            <!-- About Area -->
+            <section id="tm-about-area" class="tm-section tm-about-area tm-padding-section-bottom bg-white">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12 order-2 order-lg-1">
+                            <div class="tm-about-content tm-scrollanim">
+                                <h6>About</h6>
+                                <h3>Expert Hatchery for Healthy Prawn Farming</h3>
+                                <p>We specialize in high-quality post-larvae prawn production, ensuring strong survival
+                                    rates and
+                                    disease-free stock. Our advanced hatchery techniques provide the best start for
+                                    successful
+                                    prawn farming.</p>
+                                <p>With years of expertise, we focus on sustainable practices, maintaining optimal water
+                                    conditions,
+                                    and delivering premium-quality prawn larvae for farmers across the region.</p>
+                                <ul class="stylish-list-color">
+                                    <li><i class="ion-android-checkmark-circle"></i> Advanced hatchery producing
+                                        high-survival post-larvae.</li>
+                                    <li><i class="ion-android-checkmark-circle"></i> Disease-free prawns with strict
+                                        biosecurity measures.</li>
+                                    <li><i class="ion-android-checkmark-circle"></i> Reliable supply and nationwide
+                                        delivery options.</li>
+                                </ul>
+                                <a href="#" class="tm-button">Read more</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-12 order-1 order-lg-2">
+                            <div class="tm-about-image tm-scrollanim">
+                                <img src="assets/images/about-image.png" alt="about image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--// About Area -->
+
+            <!-- Service Area -->
+            <div id="tm-service-area" class="tm-section tm-service-area tm-padding-section-bottom bg-white">
+
+                <div class="container">
+
+                    <div class="row justify-content-center">
+
+                        <div class="col-xl-7 col-lg-8 col-md-9 col-12">
+
+                            <div class="tm-sectiontitle text-center">
+
+                                <h2>Our Services</h2>
+
+                                <span class="tm-sectiontitle-divider">
+
+                                    <img src="assets/images/icons/icon-divider-img.png" alt="section divider">
+
+                                </span>
+
+                                <p>We provide high-quality post-larvae, expert consultation, and reliable supply to help
+                                    you build a successful prawn farming business.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-30-reverse">
+
+
+
+                        <!-- Single Service -->
+
+                        <div class="col-lg-4 col-md-6 col-12 mt-30">
+
+                            <div class="tm-service text-center tm-scrollanim">
+
+                                <div class="tm-service-inner">
+
+                                    <div class="tm-service-frontside" data-bgimage="assets/images/service-image-1.jpg">
+
+                                        <h6>Post-Larvae Supply</h6>
+
+                                    </div>
+
+                                    <div class="tm-service-backside">
+
+                                        <h6><a href="service-details.html">Post-Larvae Supply</a></h6>
+
+                                        <p>We provide high-quality, disease-free prawn post-larvae with excellent
+                                            survival rates for successful farming.</p>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--// Single Service -->
+
+
+
+                        <!-- Single Service -->
+
+                        <div class="col-lg-4 col-md-6 col-12 mt-30">
+
+                            <div class="tm-service text-center tm-scrollanim">
+
+                                <div class="tm-service-inner">
+
+                                    <div class="tm-service-frontside" data-bgimage="assets/images/service-image-2.jpg">
+
+                                        <h6>Bulk Orders</h6>
+
+                                    </div>
+
+                                    <div class="tm-service-backside">
+
+                                        <h6><a href="service-details.html">Bulk Orders</a></h6>
+
+                                        <p>Flexible order options for small and large-scale farms, ensuring steady
+                                            supply year-round.</p>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--// Single Service -->
+
+
+
+                        <!-- Single Service -->
+
+                        <div class="col-lg-4 col-md-6 col-12 mt-30">
+
+                            <div class="tm-service text-center tm-scrollanim">
+
+                                <div class="tm-service-inner">
+
+                                    <div class="tm-service-frontside" data-bgimage="assets/images/service-image-3.jpg">
+
+                                        <h6>Farm Consultation</h6>
+
+                                    </div>
+
+                                    <div class="tm-service-backside">
+
+                                        <h6><a href="service-details.html">Farm Consultation</a></h6>
+
+                                        <p>Expert advice on pond setup, water quality, and optimal farming techniques
+                                            for better yields.</p>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--// Single Service -->
+
+
+
+                        <!-- Single Service -->
+
+                        <div class="col-lg-4 col-md-6 col-12 mt-30">
+
+                            <div class="tm-service text-center tm-scrollanim">
+
+                                <div class="tm-service-inner">
+
+                                    <div class="tm-service-frontside" data-bgimage="assets/images/service-image-4.jpg">
+
+                                        <h6>Secure Delivery</h6>
+
+                                    </div>
+
+                                    <div class="tm-service-backside">
+
+                                        <h6><a href="service-details.html">Secure Delivery</a></h6>
+
+                                        <p>Reliable nationwide transportation of live prawn post-larvae with proper
+                                            packaging and handling.</p>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--// Single Service -->
+
+
+
+                        <!-- Single Service -->
+
+                        <div class="col-lg-4 col-md-6 col-12 mt-30">
+
+                            <div class="tm-service text-center tm-scrollanim">
+
+                                <div class="tm-service-inner">
+
+                                    <div class="tm-service-frontside" data-bgimage="assets/images/service-image-5.jpg">
+
+                                        <h6>Health Monitoring</h6>
+
+                                    </div>
+
+                                    <div class="tm-service-backside">
+
+                                        <h6><a href="service-details.html">Health Monitoring</a></h6>
+
+                                        <p>Strict biosecurity measures to ensure disease-free post-larvae and a healthy
+                                            farm environment.</p>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--// Single Service -->
+
+
+
+                        <!-- Single Service -->
+
+                        <div class="col-lg-4 col-md-6 col-12 mt-30">
+
+                            <div class="tm-service text-center tm-scrollanim">
+
+                                <div class="tm-service-inner">
+
+                                    <div class="tm-service-frontside" data-bgimage="assets/images/service-image-6.jpg">
+
+                                        <h6>Growth Training</h6>
+
+                                    </div>
+
+                                    <div class="tm-service-backside">
+
+                                        <h6><a href="service-details.html">Growth Training</a></h6>
+
+                                        <p>Educational support and training programs to improve productivity and
+                                            increase farm profitability.</p>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--// Single Service -->
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!--// Service Area -->
+
+            <!-- Testimonial Area -->
+            <div class="tm-section tm-testimonial-area tm-padding-section-bottom bg-white bg-pattern-transparent">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7 col-lg-8 col-md-9 col-12">
+                            <div class="tm-sectiontitle text-center">
+                                <h2>Feedback From our Clients</h2>
+                                <span class="tm-sectiontitle-divider">
+                                    <img src="assets/images/icons/icon-divider-img.png" alt="section divider">
+                                </span>
+                                <p>Our customers' satisfaction is our top priority. Here’s what they have to say about
+                                    our services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row tm-testimonial-slider">
+
+                        <!-- Single Testimonial -->
+                        <div class="col-lg-6">
+                            <div class="tm-testimonial tm-scrollanim">
+                                <div class="tm-testimonial-top">
+                                    <div class="tm-testimonial-author">
+                                        <div class="tm-testimonial-image">
+                                            <img src="assets/images/author-image-1.png" alt="author image">
+                                        </div>
+                                        <div class="tm-testimonial-authorcontent">
+                                            <h6>Arun Kumar</h6>
+                                            <p>Happy customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="tm-testimonial-ratings">
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                    </div>
+                                </div>
+                                <p>The service was exceptional, and the team exceeded my expectations. I highly
+                                    recommend their expertise.</p>
+                            </div>
+                        </div>
+                        <!--// Single Testimonial -->
+
+                        <!-- Single Testimonial -->
+                        <div class="col-lg-6">
+                            <div class="tm-testimonial tm-scrollanim">
+                                <div class="tm-testimonial-top">
+                                    <div class="tm-testimonial-author">
+                                        <div class="tm-testimonial-image">
+                                            <img src="assets/images/author-image-2.png" alt="author image">
+                                        </div>
+                                        <div class="tm-testimonial-authorcontent">
+                                            <h6>Meenakshi Ravi</h6>
+                                            <p>Happy customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="tm-testimonial-ratings">
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                    </div>
+                                </div>
+                                <p>They delivered my project on time with top-notch quality. The professionalism and
+                                    support were outstanding.</p>
+                            </div>
+                        </div>
+                        <!--// Single Testimonial -->
+
+                        <!-- Single Testimonial -->
+                        <div class="col-lg-6">
+                            <div class="tm-testimonial">
+                                <div class="tm-testimonial-top">
+                                    <div class="tm-testimonial-author">
+                                        <div class="tm-testimonial-image">
+                                            <img src="assets/images/author-image-1.png" alt="author image">
+                                        </div>
+                                        <div class="tm-testimonial-authorcontent">
+                                            <h6>Venkatesh Babu</h6>
+                                            <p>Happy customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="tm-testimonial-ratings">
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                    </div>
+                                </div>
+                                <p>Highly skilled professionals who understand client needs perfectly. I'm thrilled with
+                                    the results.</p>
+                            </div>
+                        </div>
+                        <!--// Single Testimonial -->
+
+                        <!-- Single Testimonial -->
+                        <div class="col-lg-6">
+                            <div class="tm-testimonial">
+                                <div class="tm-testimonial-top">
+                                    <div class="tm-testimonial-author">
+                                        <div class="tm-testimonial-image">
+                                            <img src="assets/images/author-image-2.png" alt="author image">
+                                        </div>
+                                        <div class="tm-testimonial-authorcontent">
+                                            <h6>Priya Srinivasan</h6>
+                                            <p>Happy customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="tm-testimonial-ratings">
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                        <span class="active"><i class="ion-android-star"></i></span>
+                                    </div>
+                                </div>
+                                <p>They handled my project efficiently with great attention to detail. A fantastic
+                                    experience overall!</p>
+                            </div>
+                        </div>
+                        <!--// Single Testimonial -->
+
+                    </div>
+                </div>
+            </div>
+            <!--// Testimonial Area -->
+
+            <h2>Locate us</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.103778063496!2d79.99875587471914!3d15.506275185334492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4d8df8ec18eb%3A0x3c38b8e74847a00a!2sOngole%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1708775842693!5m2!1sen!2sin"
+                    allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+
+
+
+
+
+
+
+        </main>
+        <!--// Page Content -->
+
+        <!-- Footer -->
+        <div class="tm-footer">
+            <div class="tm-footer-toparea tm-padding-section" data-bgimage="assets/images/footer-area-bg.jpg"
+                data-black-overlay="9">
+                <div class="container">
+                    <div class="widgets widgets-footer row">
+
+                        <!-- Single Widget -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-widget widget-info">
+                                <a class="widget-info-logo" href="index.html"><img src="assets/images/logo.png"
+                                        alt="white logo" style="border-radius: 5px;"></a>
+                                <p>Our prawn hatchery is dedicated to providing high-quality, disease-free shrimp larvae
+                                    through advanced aquaculture techniques. We ensure sustainable and eco-friendly
+                                    farming methods to support the seafood industry with the best breed of prawns.</p>
+
+                            </div>
+                        </div>
+                        <!--// Single Widget -->
+
+                        <!-- Single Widget -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-widget widget-contact">
+                                <h6 class="widget-title">Quick Links</h6>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--// Single Widget -->
+
+                        <!-- Single Widget -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-widget widget-contact">
+                                <h6 class="widget-title">Contact Information</h6>
+                                <ul>
+                                    <li>
+                                        <i class="ion-ios-telephone-outline"></i>
+                                        <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                                    </li>
+                                    <li>
+                                        <i class="ion-ios-email-outline"></i>
+                                        <p><a href="mailto:info@prawnhatchery.com">info@prawnhatchery.com</a></p>
+                                    </li>
+                                    <li>
+                                        <i class="ion-ios-location-outline"></i>
+                                        <p>Ongole, Andhra Pradesh, India</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--// Single Widget -->
+
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="single-widget widget-info">
+
+                                <h6 style="color: white;">Social media links</h6>
+                                <ul>
+                                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                                    <li><a href="#"><i class="ion-social-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="tm-footer-bottomarea bg-dark">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 text-center">
+                            <p class="tm-footer-copyright">Copyright © Sai Roopa | Design & Developed by ❤️&nbsp;<a
+                                    href="https://nhoste.github.io/official-website/" target="_blank"><b>nhoste Software
+                                        Solutions</b></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--// Footer -->
+
+        <!-- Product Quickview -->
+        <div class="tm-product-quickview" id="tm-product-quickview">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-9 col-lg-10 col-12">
+                        <div class="tm-product-quickview-inner">
+                            <!-- Product Details -->
+                            <div class="tm-prodetails">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="tm-prodetails-images">
+                                            <div class="tm-prodetails-largeimages">
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img src="assets/images/products/product-image-1.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img src="assets/images/products/product-image-2.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img src="assets/images/products/product-image-3.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img src="assets/images/products/product-image-1.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img src="assets/images/products/product-image-2.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-largeimage">
+                                                    <img src="assets/images/products/product-image-3.jpg"
+                                                        alt="product image">
+                                                </div>
+                                            </div>
+                                            <div class="tm-prodetails-thumbnails">
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img src="assets/images/products/product-image-thumb-1.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img src="assets/images/products/product-image-thumb-2.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img src="assets/images/products/product-image-thumb-3.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img src="assets/images/products/product-image-thumb-1.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img src="assets/images/products/product-image-thumb-2.jpg"
+                                                        alt="product image">
+                                                </div>
+                                                <div class="tm-prodetails-thumbnail">
+                                                    <img src="assets/images/products/product-image-thumb-3.jpg"
+                                                        alt="product image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="tm-prodetails-content">
+                                            <h4 class="tm-prodetails-title">Fishing Reel</h4>
+                                            <div class="tm-ratingbox">
+                                                <span class="is-active"><i class="ion-android-star"></i></span>
+                                                <span class="is-active"><i class="ion-android-star"></i></span>
+                                                <span class="is-active"><i class="ion-android-star"></i></span>
+                                                <span class="is-active"><i class="ion-android-star"></i></span>
+                                                <span><i class="ion-android-star"></i></span>
+                                            </div>
+                                            <div class="tm-prodetails-price">
+                                                <span><del>$75.99</del> $59.99</span>
+                                            </div>
+                                            <ul class="tm-prodetails-infos">
+                                                <li>Catagory: <a href="shop.html">Fishing equipments</a></li>
+                                                <li>Tags: <a href="shop.html">fishing woobler</a>, <a
+                                                        href="shop.html">fising hook</a>, <a href="shop.html">fishing
+                                                        reels</a></li>
+                                                <li>Product ID: 100</li>
+                                                <li>Available: <span class="color-theme">In stock</span></li>
+                                            </ul>
+                                            <div class="tm-prodetails-paras">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mi
+                                                    dolor, malesuada id metus a, mattis eleifend elit. Nullam pharetra
+                                                    consequat ex in dapibus. Vestibulum ante ipsum primis in faucibus
+                                                    orciluctus et ultrices posuere cubilia Curae.</p>
+                                            </div>
+                                            <div class="tm-prodetails-quantitycart">
+                                                <div class="tm-quantitybox">
+                                                    <input type="text" value="1">
+                                                </div>
+                                                <a href="#" class="tm-button tm-button-dark">Add To Cart</a>
+                                            </div>
+
+                                            <div class="tm-prodetails-share">
+                                                <h6>Share :</h6>
+                                                <ul>
+                                                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="ion-social-instagram-outline"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="ion-social-skype-outline"></i></a></li>
+                                                    <li><a href="#"><i class="ion-social-pinterest-outline"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Product Details -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// Product Quickview -->
+
+        <button id="back-top-top"><i class="ion-arrow-up-c"></i></button>
+
+    </div>
+    <!--// Wrapper -->
+
+    <!-- JS FILES HERE -->
+    <!-- inject:js -->
+    <script src="assets/js/vendors/plugins.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- endinject -->
+</body>
+
+</html>
