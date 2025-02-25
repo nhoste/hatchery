@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- endinject -->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <style>
         .map-container {
             width: 100%;
@@ -33,6 +35,152 @@
             font-family: Arial, sans-serif;
             margin-bottom: 10px;
             margin-top: 10px;
+        }
+
+
+
+
+
+
+        .whatsapp-container {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            z-index: 9999;
+        }
+
+        .whatsapp-container a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .main-whatsapp-icon {
+            width: 55px;
+            height: 55px;
+            background-color: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            z-index: 9;
+            animation: ripple 1.5s linear infinite;
+            transition: all 0.7s ease;
+            box-shadow:
+                0 0 0 0 rgba(37, 211, 102, 0.3),
+                0 0 0 1px rgba(37, 211, 102, 0.3),
+                0 0 0 3px rgba(37, 211, 102, 0.3),
+                0 0 0 5px rgba(37, 211, 102, 0.3);
+
+        }
+
+        @keyframes ripple {
+            0% {
+                box-shadow:
+                    0 0 0 0 rgba(37, 211, 102, 0.3),
+                    0 0 0 1px rgba(37, 211, 102, 0.3),
+                    0 0 0 3px rgba(37, 211, 102, 0.3),
+                    0 0 0 5px rgba(37, 211, 102, 0.3);
+            }
+
+            100% {
+                box-shadow:
+                    0 0 0 0 rgba(37, 211, 102, 0.3),
+                    0 0 0 4px rgba(37, 211, 102, 0.3),
+                    0 0 0 20px rgba(37, 211, 102, 0),
+                    0 0 0 30px rgba(37, 211, 102, 0);
+            }
+        }
+
+        .whatsapp-icons {
+            position: absolute;
+            bottom: -20%;
+            left: -40%;
+            width: 135px;
+            height: 135px;
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .whatsapp-icons.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .whatsapp-icon {
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            background-color: navy;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 21px;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            margin: 80px 0 0 30px;
+        }
+
+        .whatsapp-icon:hover i {
+            transform: scale(1.1);
+            transition-duration: 0.3s;
+        }
+
+        .whatsapp-icon:nth-child(1) {
+            --x: 9.5;
+            --y: -85;
+        }
+
+        .whatsapp-icon:nth-child(2) {
+            --x: 51.5;
+            --y: -68;
+        }
+
+        .whatsapp-icon:nth-child(3) {
+            --x: 80;
+            --y: -33;
+        }
+
+        .whatsapp-icon:nth-child(4) {
+            --x: 95;
+            --y: 10;
+        }
+
+        .whatsapp-icons.active .whatsapp-icon {
+            margin: 75px 0 0 20px;
+        }
+
+        .whatsapp-icons.active .whatsapp-icon:nth-child(1) {
+            opacity: 1;
+            transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px));
+            transition-delay: 0s;
+        }
+
+        .whatsapp-icons.active .whatsapp-icon:nth-child(2) {
+            opacity: 1;
+            transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px));
+            transition-delay: 0.1s;
+        }
+
+        .whatsapp-icons.active .whatsapp-icon:nth-child(3) {
+            opacity: 1;
+            transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px));
+            transition-delay: 0.2s;
+        }
+
+        .whatsapp-icons.active .whatsapp-icon:nth-child(4) {
+            opacity: 1;
+            transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px));
+            transition-delay: 0.3s;
         }
     </style>
 </head>
@@ -899,6 +1047,76 @@
         <!--// Product Quickview -->
 
         <button id="back-top-top"><i class="ion-arrow-up-c"></i></button>
+        <div class="whatsapp-container" id="whatsappContainer">
+            <div class="main-whatsapp-icon" id="mainWhatsAppIcon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="whatsapp-icons" id="whatsappIcons">
+                <div class="whatsapp-icon">
+                    <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="whatsapp-icon">
+                    <a href="https://youtube.com/yourchannel" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="whatsapp-icon">
+                    <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="whatsapp-icon">
+                    <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const whatsappContainer = document.getElementById("whatsappContainer");
+            const whatsappIcons = document.getElementById("whatsappIcons");
+
+            // Track manual toggle state
+            let isManuallyToggled = false;
+
+            // Handle hover for the main WhatsApp icon (show icons on hover)
+            whatsappContainer.addEventListener("mouseenter", () => {
+                if (!isManuallyToggled) {
+                    whatsappIcons.classList.add("active");  // Show icons on hover if not toggled manually
+                }
+            });
+
+            whatsappContainer.addEventListener("mouseleave", () => {
+                if (!isManuallyToggled) {
+                    whatsappIcons.classList.remove("active");  // Hide icons on hover out if not toggled manually
+                }
+            });
+
+            // Handle click for toggling the icons' visibility (manual toggle)
+            whatsappContainer.addEventListener("click", (e) => {
+                e.stopPropagation(); // Prevent mouseleave from being triggered immediately after click
+
+                isManuallyToggled = !isManuallyToggled; // Toggle the manual state
+                if (isManuallyToggled) {
+                    whatsappIcons.classList.add("active"); // Show icons if toggled
+                } else {
+                    whatsappIcons.classList.remove("active"); // Hide icons if toggled off
+                }
+            });
+
+            // Reset manual toggle if clicking outside the WhatsApp container
+            document.addEventListener("click", (e) => {
+                if (!whatsappContainer.contains(e.target)) {
+                    isManuallyToggled = false;
+                    whatsappIcons.classList.remove("active");  // Hide icons if clicked outside
+                }
+            });
+
+        </script>
+
 
     </div>
     <!--// Wrapper -->
